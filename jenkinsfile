@@ -1,0 +1,13 @@
+pipeline
+{
+agent any
+stages
+{
+stage ('scm checkout')
+{ step{ echo 'code is downloading'}}
+stage ('scm checkout')
+{ step{ echo 'code is downloading'}}
+stage ('scm checkout')
+{ step{ echo 'code is downloading'}}
+}
+}
