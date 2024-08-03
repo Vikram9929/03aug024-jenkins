@@ -8,6 +8,6 @@ stage ('scm checkout')
 stage ('scm checkout')
 { step{ echo 'code is downloading'}}
 stage ('scm checkout')
-{ step{ echo 'print'}
+{ step{ echo 'print'}}
 }
 }
