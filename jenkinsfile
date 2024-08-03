@@ -3,11 +3,11 @@ pipeline
 agent any
 stages
 {
-stage('scm checkout')
+stage('scm checkout1')
 { steps{ echo 'code is downloading'}}
-stage('scm checkout')
+stage('scm checkout2')
 { steps{ echo 'code is downloading'}}
-stage('scm checkout')
+stage('scm checkout3')
 { steps{ echo 'print'}}
 }
 }
