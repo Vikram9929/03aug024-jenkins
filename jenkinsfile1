@@ -4,13 +4,12 @@ agent any
 stages
 {
  stage('scm checkout')
- { steps { git branch: 'master', url: 'https://github.com/prakashk0301/mavenproject' }}
-
-
- stage('code compile')
- {steps { withMaven(globalMavenSettingsConfig: '', jdk: 'JDK_HOME', maven: 'MAVEN_HOME', mavenSettingsConfig: '', traceability: true) 
- {
-    sh 'mvn compile'
- } }}
-
+ { steps { git branch: 'master', url: 'https://github.com/Vikram9929/jenkins_sai_06aug2024.git'}}
 }
+}
+{
+sshagent(['deploy-to-tomcat']) {
+    'ssh -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@54.179.110.245/54.254.4.14://usr/share/tomcat/webapps'    
+	}
+	}
+	
